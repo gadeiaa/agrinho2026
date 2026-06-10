@@ -1,51 +1,80 @@
-// Accordion
-document.querySelectorAll('.accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const body = header.nextElementSibling;
-    body.style.maxHeight = body.style.maxHeight ? null : body.scrollHeight + "px";
-  });
+// ACCORDION
+
+const accordions = document.querySelectorAll(".accordion-header");
+
+accordions.forEach(btn => {
+
+btn.addEventListener("click", () => {
+
+const content = btn.nextElementSibling;
+
+if(content.style.display === "block"){
+content.style.display = "none";
+}else{
+content.style.display = "block";
+}
+
 });
 
-// Formulário
-document.getElementById('formulario').addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Inscrição enviada com sucesso!');
-  e.target.reset();
 });
 
-// Comentário
-document.getElementById('enviarComentario').addEventListener('click', () => {
-  const comentario = document.getElementById('comentario').value.trim();
-  if(comentario){
-    alert('Comentário enviado: ' + comentario);
-    document.getElementById('comentario').value='';
-  }
+// ACESSIBILIDADE
+
+let tamanhoFonte = 16;
+
+const aumentar = document.getElementById("aumentarFonte");
+const diminuir = document.getElementById("diminuirFonte");
+
+aumentar.addEventListener("click", () => {
+tamanhoFonte += 1;
+document.documentElement.style.setProperty(
+"--font-size",
+`${tamanhoFonte}px`
+);
 });
 
-// Acessibilidade - Fonte
-const body = document.body;
-document.getElementById('aumentarFonte').addEventListener('click', () => {
-  const style = window.getComputedStyle(body).fontSize;
-  body.style.fontSize = (parseFloat(style) + 1) + 'px';
-});
-document.getElementById('diminuirFonte').addEventListener('click', () => {
-  const style = window.getComputedStyle(body).fontSize;
-  body.style.fontSize = (parseFloat(style) - 1) + 'px';
+diminuir.addEventListener("click", () => {
+tamanhoFonte -= 1;
+document.documentElement.style.setProperty(
+"--font-size",
+`${tamanhoFonte}px`
+);
 });
 
-// Modo Escuro
-document.getElementById('modoEscuro').addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
+// MODO ESCURO
+
+document
+.getElementById("alternarTema")
+.addEventListener("click", () => {
+document.body.classList.toggle("dark");
 });
 
-// Leitura de Conteúdo
-let synth = window.speechSynthesis;
-let utterance;
-document.getElementById('lerConteudo').addEventListener('click', () => {
-  const conteudo = document.querySelector('main').innerText;
-  utterance = new SpeechSynthesisUtterance(conteudo);
-  synth.speak(utterance);
+// LEITURA POR VOZ
+
+const sintetizador = window.speechSynthesis;
+let fala;
+
+document
+.getElementById("lerPagina")
+.addEventListener("click", () => {
+
+const texto =
+document.getElementById("conteudo-principal").innerText;
+
+fala = new SpeechSynthesisUtterance(texto);
+
+fala.lang = "pt-BR";
+fala.rate = 1;
+fala.pitch = 1;
+
+sintetizador.speak(fala);
+
 });
-document.getElementById('pararLeitura').addEventListener('click', () => {
-  synth.cancel();
+
+document
+.getElementById("pararLeitura")
+.addEventListener("click", () => {
+
+sintetizador.cancel();
+
 });

@@ -1,125 +1,323 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgroFuturo: Suco e Produtos de Couve Urbana</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AgroFuturo 2026 - Couve Urbana Inteligente</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  <!-- Caixa de Acessibilidade Flutuante -->
-  <div class="acessibilidade">
+<!-- ACESSIBILIDADE -->
+<div class="acessibilidade">
     <button id="aumentarFonte">A+</button>
     <button id="diminuirFonte">A-</button>
-    <button id="modoEscuro">🌙</button>
-    <button id="lerConteudo">🔊</button>
-    <button id="pararLeitura">⏹️</button>
-  </div>
+    <button id="alternarTema">🌙</button>
+    <button id="lerPagina">🔊</button>
+    <button id="pararLeitura">⏹</button>
+</div>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Suco de Couve e Produtos Urbanos Sustentáveis</h1>
-      <p>Da horta urbana à sua casa: inovação, tecnologia e sustentabilidade em cada folha.</p>
-      <a href="#conteudo" class="cta-button">Saiba Mais</a>
-    </div>
-    <div class="imagem">
-      <img src="Foto1.png" alt="Suco de couve em copo transparente">
-    </div>
-  </header>
+<header>
 
-  <!-- SEÇÃO DE CONTEÚDO -->
-  <main id="conteudo">
-    
-    <!-- CARDS INFORMATIVOS -->
-    <section class="cards">
-      <div class="card">
-        <h2>Origem Urbana</h2>
-        <p>Cultivamos couve em hortas urbanas, reduzindo a pegada ambiental e conectando campo e cidade.</p>
-      </div>
-      <div class="card">
-        <h2>Produtos Diversificados</h2>
-        <p>Couve picada, suco, polpa e até sabonete natural, com propriedades nutritivas e brilho especial para a pele.</p>
-      </div>
-      <div class="card">
-        <h2>Feira de Ciências</h2>
-        <p>Nosso trabalho inovador foi destaque em feiras escolares, mostrando qualidade e sustentabilidade.</p>
-      </div>
-    </section>
+<nav class="navbar">
+    <h2>🌱 AgroFuturo 2026</h2>
 
-    <!-- ACCORDION SOBRE IA E BENEFÍCIOS -->
-    <section class="accordion-section">
-      <h2>Benefícios da Inteligência Artificial no Campo</h2>
-      <div class="accordion">
-        <button class="accordion-header">Otimização de Recursos</button>
-        <div class="accordion-body">
-          <p>Monitoramento inteligente de solo, irrigação e nutrientes reduz desperdícios e aumenta produtividade.</p>
-        </div>
-      </div>
-      <div class="accordion">
-        <button class="accordion-header">Monitoramento de Culturas</button>
-        <div class="accordion-body">
-          <p>Drones e sensores detectam doenças, infestação e planejam replantio com precisão.</p>
-        </div>
-      </div>
-      <div class="accordion">
-        <button class="accordion-header">Previsibilidade e Gestão de Riscos</button>
-        <div class="accordion-body">
-          <p>Previsão de safras e eventos climáticos para reduzir perdas e otimizar logística.</p>
-        </div>
-      </div>
-      <div class="accordion">
-        <button class="accordion-header">Automação e Eficiência</button>
-        <div class="accordion-body">
-          <p>Tratores e máquinas autônomas aumentam precisão, produtividade e reduzem necessidade de mão de obra.</p>
-        </div>
-      </div>
-      <div class="accordion">
-        <button class="accordion-header">Qualidade e Sustentabilidade</button>
-        <div class="accordion-body">
-          <p>Controle de qualidade desde a horta urbana até o consumidor final, com uso racional de recursos.</p>
-        </div>
-      </div>
-    </section>
+    <ul>
+        <li><a href="#projeto">Projeto</a></li>
+        <li><a href="#ia">IA no Campo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Inscrição</a></li>
+    </ul>
+</nav>
 
-    <!-- GALERIA DE IMAGENS -->
-    <section class="galeria">
-      <div class="imagem"><img src="Foto2.png" alt="Couve picada"></div>
-      <div class="imagem"><img src="Foto3.png" alt="Polpa de couve"></div>
-      <div class="imagem"><img src="Foto4.png" alt="Sabonete de couve com brilho"></div>
-    </section>
+<section class="hero">
 
-    <!-- FORMULÁRIO -->
-    <aside class="form-card">
-      <h3>Venha conhecer como a IA pode ser sua aliada no campo.</h3>
-      <p>Inscreva-se no nosso seminário on-line.</p>
-      <form id="formulario">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <input type="text" name="cidade" placeholder="Cidade">
-        <input type="text" name="estado" placeholder="Estado">
-        <input type="text" name="pais" placeholder="País">
-        <button type="submit">Inscrever-se</button>
-      </form>
-    </aside>
+<div class="hero-content">
 
-    <!-- COMENTÁRIOS -->
-    <section class="comentarios">
-      <h2>Interaja conosco</h2>
-      <textarea id="comentario" placeholder="Escreva seu comentário..."></textarea>
-      <button id="enviarComentario">Enviar</button>
-    </section>
+<h1>Tecnologia Agrícola Reforça o Papel do Brasil</h1>
 
-  </main>
+<p>
+A união entre agricultura urbana, sustentabilidade e Inteligência Artificial
+está transformando a produção de alimentos e criando soluções inovadoras para
+saúde, meio ambiente e qualidade de vida.
+</p>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>Referências: <a href="https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/" target="_blank">BemAgro</a>, 
-    <a href="https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html" target="_blank">Agrolink</a></p>
-    <p>AgroFuturo 2026 ° Conectando a inteligência tecnologia à terra de forma sustentável</p>
-  </footer>
+<a href="#projeto" class="btn">
+Conheça o Projeto
+</a>
 
-  <script src="script.js"></script>
+</div>
+
+<div class="hero-illustration">
+🌿🏙️🤖
+</div>
+
+</section>
+
+</header>
+
+<main id="conteudo-principal">
+
+<!-- PROJETO -->
+
+<section id="projeto" class="section">
+
+<h2>🌱 Projeto Destaque Escolar: Couve Urbana Inteligente</h2>
+
+<div class="cards-grid">
+
+<div class="card">
+<h3>🥬 Plantação Urbana</h3>
+<p>
+A couve é cultivada em ambiente urbano sustentável,
+promovendo alimentação saudável, educação ambiental e
+conscientização sobre produção local.
+</p>
+</div>
+
+<div class="card">
+<h3>🧼 Sabonete de Couve</h3>
+<p>
+Produção de sabonetes naturais elaborados a partir da couve,
+auxiliando nos cuidados com a pele e incentivando o reaproveitamento sustentável.
+</p>
+</div>
+
+<div class="card">
+<h3>🥤 Sucos e Polpas</h3>
+<p>
+Transformação da couve em sucos nutritivos e polpas congeladas,
+favorecendo uma alimentação funcional e saudável.
+</p>
+</div>
+
+<div class="card">
+<h3>🍽 Consumo Alimentar</h3>
+<p>
+Utilização da couve picada para refeições saudáveis,
+fortalecendo hábitos alimentares conscientes.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria" class="section">
+
+<h2>📸 Galeria do Projeto</h2>
+
+<div class="galeria">
+
+<div class="imagem">
+<img src="Foto1.png" alt="Plantação urbana de couve">
+</div>
+
+<div class="imagem">
+<img src="Foto2.png" alt="Produção de sabonete de couve">
+</div>
+
+<div class="imagem">
+<img src="Foto3.png" alt="Produtos derivados da couve">
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTEÚDO -->
+
+<section class="section">
+
+<h2>🚜 Agricultura, Tecnologia e Sustentabilidade</h2>
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+Tecnologia Agrícola e Destaque Brasileiro
+</button>
+
+<div class="accordion-content">
+<p>
+A agricultura sustentável ganha espaço globalmente ao unir
+produtividade, inovação e adaptação climática.
+O Brasil se destaca pela aplicação de tecnologias que reduzem custos,
+aumentam a eficiência e fortalecem a segurança alimentar.
+</p>
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+Microrganismos e Agricultura Sustentável
+</button>
+
+<div class="accordion-content">
+<p>
+Pesquisas brasileiras desenvolveram microrganismos capazes
+de auxiliar as plantas na obtenção de nutrientes,
+reduzindo a dependência de fertilizantes químicos e
+contribuindo para uma produção mais sustentável.
+</p>
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<button class="accordion-header">
+Inteligência Artificial no Campo
+</button>
+
+<div class="accordion-content">
+<p>
+A Inteligência Artificial permite monitoramento das lavouras,
+análise de solo, previsão climática, irrigação inteligente,
+automação agrícola e aumento da produtividade.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFÍCIOS IA -->
+
+<section id="ia" class="section">
+
+<h2>🤖 Benefícios da Inteligência Artificial no Campo</h2>
+
+<div class="cards-grid">
+
+<div class="card">
+<h3>💧 Otimização de Recursos</h3>
+<p>Uso inteligente da água, fertilizantes e insumos.</p>
+</div>
+
+<div class="card">
+<h3>🚁 Monitoramento por Drones</h3>
+<p>Identificação rápida de doenças e falhas nas culturas.</p>
+</div>
+
+<div class="card">
+<h3>📈 Gestão de Riscos</h3>
+<p>Previsão climática e planejamento da produção.</p>
+</div>
+
+<div class="card">
+<h3>🚜 Automação</h3>
+<p>Máquinas autônomas e agricultura de precisão.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Qualidade dos Produtos</h3>
+<p>Maior controle da produção até o consumidor final.</p>
+</div>
+
+<div class="card">
+<h3>♻ Sustentabilidade</h3>
+<p>Redução de desperdícios e menor impacto ambiental.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULÁRIO -->
+
+<section id="contato" class="section contato-grid">
+
+<div class="texto-seminario">
+
+<h2>🌾 Seminário Online</h2>
+
+<p>
+Venha conhecer melhor como a IA pode ser uma aliada do Campo.
+Inscreva-se no nosso seminário on-line.
+</p>
+
+</div>
+
+<div class="formulario-card">
+
+<form>
+
+<input type="text" placeholder="Nome" required>
+
+<input type="email" placeholder="E-mail" required>
+
+<input type="text" placeholder="Cidade">
+
+<input type="text" placeholder="Estado">
+
+<input type="text" placeholder="País">
+
+<button type="submit">
+Inscrever-se
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- COMENTÁRIOS -->
+
+<section class="section">
+
+<h2>💬 Comentários</h2>
+
+<div class="comentario-box">
+
+<textarea placeholder="Compartilhe sua opinião..."></textarea>
+
+<button>
+Enviar Comentário
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer-box">
+
+<h3>Referências Utilizadas</h3>
+
+<p>
+https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/
+</p>
+
+<p>
+https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html
+</p>
+
+<p class="frase">
+AgroFuturo 2026 ° Conectando a inteligência tecnologia à terra de forma sustentável
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
