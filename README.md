@@ -29,33 +29,12 @@ Divulgar um projeto escolar de destaque relacionado à agricultura urbana, demon
 
 ## Instruções de Uso
 
-### 1. Inserção das imagens
+ - Acesso: O site é responsivo e pode ser acessado em computadores, tablets ou smartphones
+ - Navegação: Utilize o menu superior para navegar entre as seções de "Plantação", "Produtos" (Sabonetes e Polpas) e "Tecnologia IA".
+ - Interatividade: Na seção de IA, insira os dados da sua horta para receber recomendações automáticas sobre a saúde das plantas
+ - Acessibilidade: Utilize o painel flutuante para ajustar o tamanho da fonte, alternar o modo escuro/claro ou ativar a leitura por voz
 
-Substitua os arquivos:
-
-- Foto1.jpg.jpeg
-- Foto2.jpg.jpeg
-- Foto3.jpg.jpeg
-
-pelas imagens reais do projeto.
-
-### 2. Arquivos necessários
-
-- index.html
-- style.css
-- script.js
-
-Mantenha todos na mesma pasta.
-
-### 3. Executar
-
-Abra o arquivo:
-
-index.html
-
-em qualquer navegador moderno.
-
-### 4. Recursos disponíveis
+### Recursos disponíveis
 
 - Layout Responsivo
 - Cards Informativos
@@ -68,6 +47,19 @@ em qualquer navegador moderno.
 - Compatível com Desktop, Tablet e Mobile
 
 ---
+
+**Uso de Inteligência Artificial (Documentação de Prompts)**
+Importante: Conforme o regulamento, o uso de IA sem indicação dos prompts reduz a nota de originalidade para o Nível 1
+ - Prompt utilizado para estruturação do código: "Atue como um desenvolvedor Front-End e ajude a criar um sistema de monitoramento de horta urbana usando JavaScript puro..."
+ - Prompt utilizado para criação de textos: "Crie um texto educativo sobre os benefícios do sabonete de couve para o reaproveitamento sustentável..."
+
+---
+
+🛠️ **### Organização do Repositório**
+ - /img: Pasta contendo todas as mídias e imagens originais
+ - index.html: Arquivo principal da aplicação
+ - style.css: Estilização completa do projeto
+ - script.js: Lógica e interações JavaScript
 
 ## Referências
 
