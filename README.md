@@ -67,6 +67,13 @@ https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/
 
 https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html
 
+https://www.sistemafaep.org.br/agrinho/
+
+https://www.sistemafaep.org.br/ods/
+
+https://www.tuasaude.com/couve/
+
+https://www.nationalgeographicbrasil.com/ciencia/2025/02/os-4-beneficios-da-couve-para-a-saude-humana-por-que-ela-deveria-estar-no-seu-prato-todo-dia
 ---
 
 ### AgroFuturo 2026
