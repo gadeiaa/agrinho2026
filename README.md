@@ -33,9 +33,9 @@ Divulgar um projeto escolar de destaque relacionado à agricultura urbana, demon
 
 Substitua os arquivos:
 
-- Foto1.png
-- Foto2.png
-- Foto3.png
+- Foto1.jpg.jpeg
+- Foto2.jpg.jpeg
+- Foto3.jpg.jpeg
 
 pelas imagens reais do projeto.
 
